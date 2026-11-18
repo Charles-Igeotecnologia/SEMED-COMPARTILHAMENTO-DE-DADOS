@@ -51,6 +51,10 @@
   :focus-visible { outline: 3px solid #985500; outline-offset: 3px; }
   footer { padding-bottom: 1.8rem; color: var(--muted); font-size: .92rem; }
   .source { border-top: 1px solid var(--line); padding-top: .9rem; }
+  .contacts { margin-top: .75rem; font-style: normal; }
+  .contacts ul { display: flex; flex-wrap: wrap; gap: .35rem 1.15rem; list-style: none; margin: .25rem 0 0; padding: 0; }
+  .contacts li { margin: 0; min-width: 0; }
+  .contacts a { color: var(--green); overflow-wrap: anywhere; text-underline-offset: .15em; }
   @media (max-width: 44rem) { .grid { grid-template-columns: 1fr; } }
 </style>
 </head>
@@ -89,7 +93,16 @@
     </div>
   </section>
 </main>
-<footer class="wrap"><div class="source">Fonte: DGTI – Geotecnologia</div></footer>
+<footer class="wrap">
+  <div class="source">Fonte: DGTI – Geotecnologia</div>
+  <address class="contacts">
+    <strong>Contato</strong>
+    <ul>
+      <li><a href="mailto:geoprocessamento@semed.manaus.am.gov.br">geoprocessamento@semed.manaus.am.gov.br</a></li>
+      <li><a href="mailto:charles.araujo@semed.manaus.am.gov.br">charles.araujo@semed.manaus.am.gov.br</a></li>
+    </ul>
+  </address>
+</footer>
 <script>
   const button = document.getElementById('copy-link');
   const field = document.getElementById('folder-url');
